@@ -1,0 +1,43 @@
+html {
+  font-size: $font-size-root;
+  font-family: $font-family-base;
+  height: 100%;
+}
+
+
+body {
+  background-color: pink;
+  color : red;
+
+  position: relative;
+  min-height: 100%;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:visited,
+  &:hover,
+  &:active {
+    color: inherit;
+  }
+}
+
+#main-container {
+  padding-top: $spacing-l;
+  padding-bottom: $spacing-l;
+}
+
+*:before,
+*:after,
+* {
+  box-sizing: border-box;
+}
+
+
+ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}

@@ -1,0 +1,34 @@
+.header {
+	height: 80px;
+	box-shadow: 0 0 5px 3px rgba(0,0,0,.15);
+	background-color: $color-white;
+	display: flex;
+	& > a{
+		flex :0;
+	}
+	& > header-nav {
+		flex :1;
+	}
+}
+
+.header-logo {
+  max-height: 100%;
+}
+
+.header-nav {
+    /* vertical-align: middle; */
+    display: flex;
+    align-items: center;
+    & > ul {
+	    flex :1 0;
+	    margin-left: $spacing-m;
+	}
+
+	& > ul > li {
+		display: inline;
+    	padding: 0 0.5rem;
+	}
+	& a:hover {
+    	text-decoration: underline;
+	}
+}
